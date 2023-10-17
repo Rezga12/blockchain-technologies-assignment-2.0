@@ -443,6 +443,17 @@ This Document covers most of the parts needed to complete the assignment, I left
 to give you more freedom to explore Bitcoin details more Extensively. I will add more explanations to the document if some
 topics comes out to be hard to understend for the majority of the class.
 
+### Additional Considerations For The Assignment
+* After sending the transaction it's TXID should be Printed in the program output
+* Verify a sufficient balance before generating and sending a transaction, If I request to send
+more satoshis than the sum of my UTXOs combined, print the appropriate error message.
+* Verify The correctness of the address I am requesting to send funds to:
+  * Verify that it is indeed a P2PKH address
+  * Verify that it's Testnet Bitcoin address
+  * Verify that checksum matches the payload as by Base58CHeck standard
+* Please Try to make the code as much readable as possible, as I will manually grade an assignment if
+The send function fails.
+
 ### Bonus Points
 You will receive about 50% bonus for this assignment if you also implement `SegWit` type of addresses
 and transactions. You can read further on segwit update on [wikipedia](https://en.wikipedia.org/wiki/SegWit).
